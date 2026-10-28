@@ -1,22 +1,35 @@
-<div style="background-color:#ffffff;color:#212529;font-family:Archivo,sans-serif;font-size:16px;line-height:1.65;max-width:100%;">
-  <img src="https://cdn.jsdelivr.net/gh/JarekKrolik/regulamin-dostawa-arobron@main/assets/hero.png" alt="Ekspozycja broni krótkiej i długiej na ścianie w salonie Aro Broń" style="display:block;width:100%;max-width:100%;height:auto;border:0;" />
-  <div style="background-color:#111111;padding:18px 16px 20px;">
+<style>
+.arob-steps,.arob-pair,.arob-docs{display:flex;flex-wrap:wrap;gap:12px;}
+.arob-step{flex:1 0 200px;max-width:100%;box-sizing:border-box;}
+.arob-pair>div,.arob-docs>div{flex:1 0 280px;max-width:100%;box-sizing:border-box;}
+@media (min-width:960px){
+  .arob-step{flex:1 1 0;}
+  .arob-title{font-size:40px;}
+  .arob-hero,.arob-hero-bar{max-width:960px;margin-left:auto;margin-right:auto;}
+}
+@media (max-width:640px){
+  .arob-step,.arob-pair>div,.arob-docs>div{flex:1 1 100%;max-width:100%;}
+}
+</style>
+<div class="arob-root" style="background-color:#ffffff;color:#212529;font-family:Archivo,sans-serif;font-size:16px;line-height:1.65;max-width:100%;">
+  <img class="arob-hero" src="https://cdn.jsdelivr.net/gh/JarekKrolik/regulamin-dostawa-arobron@main/assets/hero.png" alt="Ekspozycja broni krótkiej i długiej na ścianie w salonie Aro Broń" style="display:block;width:100%;max-width:960px;height:auto;margin-left:auto;margin-right:auto;border:0;" />
+  <div class="arob-hero-bar" style="background-color:#111111;padding:18px 16px 20px;max-width:960px;margin-left:auto;margin-right:auto;">
     <p style="margin:0 0 8px;color:#ff0000;font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase;">Aro Broń · Salon broni</p>
-    <p style="margin:0;color:#ffffff;font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:28px;line-height:1.1;letter-spacing:0.3px;text-transform:uppercase;">Regulamin zakupu broni palnej i amuni&#8203;cji z dostawą</p>
+    <p class="arob-title" style="margin:0;color:#ffffff;font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:28px;line-height:1.1;letter-spacing:0.3px;text-transform:uppercase;">Regulamin zakupu broni palnej i amuni&#8203;cji z dostawą</p>
   </div>
   <p style="margin:0;padding:14px 16px;background-color:#fafafa;border-left:4px solid #ff0000;color:#212529;font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:16px;letter-spacing:1px;text-transform:uppercase;">Trasy Elbląg – Trójmiasto</p>
 
-  <div style="margin:12px 0 4px;">
-    <div style="border:1px solid #e6e6e6;padding:12px 14px;margin:0 0 8px;background-color:#ffffff;">
+  <div class="arob-steps" style="display:flex;flex-wrap:wrap;gap:12px;margin:12px 0 4px;">
+    <div class="arob-step" style="flex:1 0 200px;max-width:100%;box-sizing:border-box;border:1px solid #e6e6e6;padding:12px 14px;background-color:#ffffff;">
       <a href="#par-1" style="color:#212529;text-decoration:none;font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:16px;letter-spacing:0.5px;text-transform:uppercase;"><span style="color:#ff0000;font-size:12px;letter-spacing:1px;">01</span><br>Zamówienie</a>
     </div>
-    <div style="border:1px solid #e6e6e6;padding:12px 14px;margin:0 0 8px;background-color:#ffffff;">
+    <div class="arob-step" style="flex:1 0 200px;max-width:100%;box-sizing:border-box;border:1px solid #e6e6e6;padding:12px 14px;background-color:#ffffff;">
       <a href="#par-2" style="color:#212529;text-decoration:none;font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:16px;letter-spacing:0.5px;text-transform:uppercase;"><span style="color:#ff0000;font-size:12px;letter-spacing:1px;">02</span><br>Dokumenty</a>
     </div>
-    <div style="border:1px solid #e6e6e6;padding:12px 14px;margin:0 0 8px;background-color:#ffffff;">
+    <div class="arob-step" style="flex:1 0 200px;max-width:100%;box-sizing:border-box;border:1px solid #e6e6e6;padding:12px 14px;background-color:#ffffff;">
       <a href="#par-3" style="color:#212529;text-decoration:none;font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:16px;letter-spacing:0.5px;text-transform:uppercase;"><span style="color:#ff0000;font-size:12px;letter-spacing:1px;">03</span><br>Płatność</a>
     </div>
-    <div style="border:1px solid #e6e6e6;padding:12px 14px;margin:0 0 8px;background-color:#ffffff;">
+    <div class="arob-step" style="flex:1 0 200px;max-width:100%;box-sizing:border-box;border:1px solid #e6e6e6;padding:12px 14px;background-color:#ffffff;">
       <a href="#par-4" style="color:#212529;text-decoration:none;font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:16px;letter-spacing:0.5px;text-transform:uppercase;"><span style="color:#ff0000;font-size:12px;letter-spacing:1px;">04</span><br>Odbiór</a>
     </div>
   </div>
@@ -24,28 +37,32 @@
   <h2 id="par-1" style="margin:20px 0 12px;padding-top:4px;font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:22px;line-height:1.2;letter-spacing:0.3px;text-transform:uppercase;color:#212529;"><span style="color:#ff0000;">§ 1.</span> Postanowienia ogólne i składanie zamówień</h2>
   <p style="margin:0 0 14px;color:#212529;font-size:16px;line-height:1.65;">Sprzedaż broni palnej oraz amunicji odbywa się wyłącznie na rzecz osób posiadających stosowne uprawnienia, zgodnie z obowiązującymi przepisami Ustawy o broni i amunicji.</p>
   <p style="margin:0 0 14px;color:#212529;font-size:16px;line-height:1.65;">Zamówienia przyjmujemy za pośrednictwem:</p>
-  <div style="margin:0 0 10px;border-left:4px solid #ff0000;background-color:#fafafa;padding:14px 16px;">
+  <div class="arob-pair" style="display:flex;flex-wrap:wrap;gap:12px;margin:0 0 16px;">
+  <div style="flex:1 0 280px;max-width:100%;box-sizing:border-box;border-left:4px solid #ff0000;background-color:#fafafa;padding:14px 16px;">
     <span style="color:#5c636a;font-family:'Archivo Narrow',sans-serif;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Poczta e-mail</span><br>
     <a href="mailto:dawid@arobron.pl" style="color:#212529;font-weight:700;font-size:18px;text-decoration:none;">dawid@arobron.pl</a>
   </div>
-  <div style="margin:0 0 16px;border-left:4px solid #ff0000;background-color:#fafafa;padding:14px 16px;">
+  <div style="flex:1 0 280px;max-width:100%;box-sizing:border-box;border-left:4px solid #ff0000;background-color:#fafafa;padding:14px 16px;">
     <span style="color:#5c636a;font-family:'Archivo Narrow',sans-serif;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Telefon</span><br>
     <a href="tel:+48798703910" style="color:#212529;font-weight:700;font-size:18px;text-decoration:none;">798-703-910</a>
+  </div>
   </div>
   <p style="margin:0 0 14px;color:#212529;font-size:16px;line-height:1.65;">Złożenie zamówienia stanowi wstępną rezerwację towaru i wymaga weryfikacji formalnej przed realizacją dostawy.</p>
 
   <h2 id="par-2" style="margin:28px 0 12px;padding-top:20px;border-top:1px solid #e6e6e6;font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:22px;line-height:1.2;letter-spacing:0.3px;text-transform:uppercase;color:#212529;"><span style="color:#ff0000;">§ 2.</span> Weryfikacja uprawnień i wymagane dokumenty</h2>
   <p style="margin:0 0 14px;color:#212529;font-size:16px;line-height:1.65;">Bezpośrednio po złożeniu zamówienia Kupujący zobowiązany jest przesłać drogą mailową czytelne skany lub zdjęcia dokumentów uprawniających do zakupu:</p>
-  <div style="margin:0 0 12px;border:1px solid #e6e6e6;padding:16px;">
+  <div class="arob-docs" style="display:flex;flex-wrap:wrap;gap:12px;">
+  <div style="flex:1 0 280px;max-width:100%;box-sizing:border-box;border:1px solid #e6e6e6;padding:16px;">
     <h3 style="margin:0 0 10px;font-family:'Archivo Narrow',sans-serif;font-size:18px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#212529;">Przy zakupie amunicji</h3>
     <p style="margin:0 0 10px;color:#212529;font-size:16px;line-height:1.65;"><span style="color:#ff0000;">■ </span>Legitymacja posiadacza broni z wpisanym odpowiednim kalibrem (strona z danymi oraz strona z wpisanym kalibrem),</p>
     <p style="margin:0;color:#212529;font-size:16px;line-height:1.65;"><span style="color:#ff0000;">■ </span>Obie strony dowodu osobistego.</p>
   </div>
-  <div style="margin:0 0 8px;border:1px solid #e6e6e6;padding:16px;">
+  <div style="flex:1 0 280px;max-width:100%;box-sizing:border-box;border:1px solid #e6e6e6;padding:16px;">
     <h3 style="margin:0 0 10px;font-family:'Archivo Narrow',sans-serif;font-size:18px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#212529;">Przy zakupie broni palnej</h3>
     <p style="margin:0 0 10px;color:#212529;font-size:16px;line-height:1.65;"><span style="color:#ff0000;">■ </span>Zaświadczenie uprawniające do nabycia broni (tzw. promesa) – obie strony,</p>
     <p style="margin:0 0 10px;color:#212529;font-size:16px;line-height:1.65;"><span style="color:#ff0000;">■ </span>Pierwsza strona decyzji o wydaniu pozwolenia na broń – w przypadku, gdy promesa nie zawiera wyszczególnionych rodzajów broni dopuszczonych do nabycia,</p>
     <p style="margin:0;color:#212529;font-size:16px;line-height:1.65;"><span style="color:#ff0000;">■ </span>Obie strony dowodu osobistego.</p>
+  </div>
   </div>
 
   <h2 id="par-3" style="margin:28px 0 12px;padding-top:20px;border-top:1px solid #e6e6e6;font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:22px;line-height:1.2;letter-spacing:0.3px;text-transform:uppercase;color:#212529;"><span style="color:#ff0000;">§ 3.</span> Płatności</h2>
